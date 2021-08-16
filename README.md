@@ -1,9 +1,4 @@
-<a href="https://unige.it/en/">
-<img src="images/unige.png" width="20%" height="20%" title="University of Genoa" alt="University of Genoa" >
-</a>
-
-
-# First Assignment of the Research Track 2 course (Robotics Engineering / University of Genova. Italy)
+# First Assignment of the Research Track 2 (Robotics Engineering / University of Genova. Italy)
 
 **Farzin Sarvari**
 
@@ -85,7 +80,7 @@ Also the structure of the **Position.srv** message sent between the node was cha
 
 ## ROS2 Package Description
 
-This package does exactly the same thing that the package in the master branch does, the only difference is that it does part of it with **ros2**,  [click here](https://github.com/Omotoye/rt2_assignment1/tree/ros2) to go to the ros2 branch. The package in both the **master** and **action** branch is written specifically for **_ROS Noetic Ninjemys_**. The package in the **ros2** branch allows some parts of the simulation (**state_machine and random_position is controlled from ros2**) to be controlled from a *__ROS 2 Foxy Fitzroy__* package. This is made possible by a package called [ros1_bridge](https://github.com/ros2/ros1_bridge "ros1_brige"), this package helps to bridge the messages from a **ros2** package with messages in **ros** package which then enable communication between the nodes of the package. _Instructions on how to compile and launch the ros1_brige can be found in the readme contained in the ros2 branch; **all required configurations have already been made to the package**_.
+This package does exactly the same thing that the package in the master branch does, the only difference is that it does part of it with **ros2**, to go to the ros2 branch. The package in both the **master** and **action** branch is written specifically for **_ROS Noetic Ninjemys_**. The package in the **ros2** branch allows some parts of the simulation (**state_machine and random_position is controlled from ros2**) to be controlled from a *__ROS 2 Foxy Fitzroy__* package. This is made possible by a package called [ros1_bridge](https://github.com/ros2/ros1_bridge "ros1_brige"), this package helps to bridge the messages from a **ros2** package with messages in **ros** package which then enable communication between the nodes of the package. _Instructions on how to compile and launch the ros1_brige can be found in the readme contained in the ros2 branch; **all required configurations have already been made to the package**_.
 
 ## The CoppeliaSim Simulation Scene
 <div align="center">
@@ -118,7 +113,7 @@ def handle_wheel_velocity(msg):
 ```
 
 # New Package Version Release
-The next iteration of this project can be found in [Second Assignment of the Research Track 2 course](https://github.com/Omotoye/rt2_assignment2). This package is built from the **action** branch of this repository. it includes a **Jupyter Notebook** notebook that the user can use for the **control** *of the robot and the* **visualization** *of the state of the robot.* It features things like buttons for starting and stopping the robot, a control pad for directly moving the robot, and several plots for visualizing the state of the robot. The picture below is attached to give a preview of what to expect from the package. 
+This package is built from the **action** branch of this repository. it includes a **Jupyter Notebook** notebook that the user can use for the **control** *of the robot and the* **visualization** *of the state of the robot.* It features things like buttons for starting and stopping the robot, a control pad for directly moving the robot, and several plots for visualizing the state of the robot. The picture below is attached to give a preview of what to expect from the package. 
 
 <div align="center">
 <img src="images/stop.PNG" title="Start/Stop Control" alt="Start/Stop Control" >
@@ -128,8 +123,7 @@ The next iteration of this project can be found in [Second Assignment of the Res
 </div>
 
 # How to Compile and Launch the Package (*master and action branch*)
-**NB**: The instructions below are meant for the **_master_** and **_action_** branch of this repository which is written for _**ROS Noetic Ninjemys**_. To compile and launch the package in the **ros2** branch please consult the readme provided in the [ros2 branch](https://github.com/Omotoye/rt2_assignment1/tree/ros2).
-
+**NB**: The instructions below are meant for the **_master_** and **_action_** branch of this repository which is written for _**ROS Noetic Ninjemys**_.
 ## Compile
 
 First, you create a folder for your catkin workspace
@@ -142,7 +136,6 @@ Clone the package repository
 
 ```bash
 cd ~/catkin_ws/src
-git clone https://github.com/Omotoye/rt2_assignment1.git
 ```
 If you want to work with the action branch 
 ```bash
@@ -172,7 +165,7 @@ source ~/catkin_ws/devel/setup.bash
 If you didn't follow the initial steps because you already have a workspace, trace a path from your home directory to your catkin workspace down to your setup.bash file. An example is shown below, **_THIS WILL NOT WORK FOR YOU, IT IS JUST AN EXAMPLE TO SHOW HOW IT CAN BE DONE_**
 
 ```bash
-source /home/omotoye/catkin_ws/devel/setup.bash
+source /home/catkin_ws/devel/setup.bash
 ```
 ### For Gazebo Simulation
 
