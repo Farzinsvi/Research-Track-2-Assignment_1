@@ -41,8 +41,6 @@ The state machine is in charge of transitioning the system state from one state 
 ### Go To Point (_go_to_point.py_)
 This node takes a service request of a target pose coordinate message from the state machine and then navigates the robot from its current position coordinate to the required target position coordinate. 
 
-These are the basic functions of the nodes contained in the **master** branch of this repository, for more information about the code contained in the nodes of the master branch [Click Here](https://omotoye.github.io/rt2_assignment1/ "Script code HTML Documentation"). The **action** and **ros2** branch make minor changes to these nodes for some specific reason which would be described below. 
-
 ---
 
 ## Action Package Description
